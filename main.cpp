@@ -23,17 +23,14 @@ int main()
         cin.clear(); 
         cin.ignore(); 
         cout << "\nName of student " << i << ": ";
-        // cout << "Name of student " << (i+1) << ": ";
-        getline(cin, name); // new line automatically
+        getline(cin, name);
         students[i].setName(name);
 
         cout << "\nID of student " << i << ": ";
-        // cout << "ID of student " << (i+1) << ": #";
-        cin >> id; // new line automatically
+        cin >> id;
         students[i].setId(id);
 
         cout << "\nGraduation year of student " << i << ": ";
-        // cout << "Graduation year of student " << (i+1) << ": ";
         cin >> gradYear;
         students[i].setGradYear(gradYear);
     }

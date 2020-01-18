@@ -8,45 +8,45 @@ private:
 
 public:
     void setName(string nameIn);
-    void setId(int idIn);
+    void setID(int idIn);
     void setGradYear(int gradYearIn);
     void print();
     string getName();
-    int getId();
+    int getID();
     int getGradYear();
-    
 };
+
 void studList::setName(string nameIn)
 {
     name_ = nameIn;
 }
-void studList::setId(int idIn)
+
+void studList::setID(int idIn)
 {
     idNum_ = idIn;
 }
+
 void studList::setGradYear(int gradYearIn)
 {
     gradYear_ = gradYearIn;
 }
+
 void studList::print()
 {
     cout << "\n" << name_ << "\t\t" << idNum_ << "\t\t" << gradYear_;
 }
+
 string studList::getName()
 {
     return name_;
 }
-int studList::getId()
+
+int studList::getID()
 {
     return idNum_;
 }
+
 int studList::getGradYear()
 {
     return gradYear_;
 }
-
-// string student1[3] = {"Joe Lime", "15", "2019"};
-// string student2[3] = {"Bob Green", "3", "2020"};
-// string student3[3] = {"SallyAnne Green", "1", "2017"};
-// string student4[3] = {"Annie Blue", "10", "2020"};
-// string student5[3] = {"Jose Lemon", "25", "2016"};

@@ -1,12 +1,12 @@
 #pragma once
 
-#ifndef CLASS
-
-class studList;
+#ifndef CLASS_H
 #include <string>
 #include <iostream>
 #include <iomanip>
+
 using namespace std;
 
+class studList;
 
-#endif // CLASS
+#endif // CLASS_H

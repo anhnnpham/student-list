@@ -1,10 +1,5 @@
-// #include "main.hpp"
-void compareName(studList studentIn[], int numStud);
-void compareID(studList studentIn[], int numStud);
-void compareGraduationYear(studList studentIn[], int numStud);
-
 void compareName(studList studentIn[], int numStud)
-{
+{/* 
     for (size_t j = 0; j < numStud; j++)
     {
         for (size_t i = 0; i < numStud-1; i++)
@@ -22,10 +17,10 @@ void compareName(studList studentIn[], int numStud)
     {
         studentIn[i].print();
     }
-}
+ */}
 
 void compareID(studList studentIn[], int numStud)
-{
+{/* 
     for (size_t j = 0; j < numStud; j++)
     {
         for (size_t i = 0; i < numStud-1; i++)
@@ -43,10 +38,10 @@ void compareID(studList studentIn[], int numStud)
     {
         studentIn[i].print();
     }
-}
+ */}
 
 void compareGraduationYear(studList studentIn[], int numStud)
-{
+{/* 
     for (size_t j = 0; j < numStud; j++)
     {
         for (size_t i = 0; i < numStud-1; i++)
@@ -64,4 +59,4 @@ void compareGraduationYear(studList studentIn[], int numStud)
     {
         studentIn[i].print();
     }
-}
+ */}

@@ -1,10 +1,10 @@
 #include "main.hpp"
-class studList
+class student
 {
 private:
-    string name_;
-    int idNum_;
-    int gradYear_;
+    string _name;
+    int _idNum;
+    int _gradYear;
 
 public:
     void setName(string nameIn);
@@ -16,37 +16,37 @@ public:
     int getGradYear();
 };
 
-void studList::setName(string nameIn)
+void student::setName(string nameIn)
 {
-    name_ = nameIn;
+    _name = nameIn;
 }
 
-void studList::setID(int idIn)
+void student::setID(int idIn)
 {
-    idNum_ = idIn;
+    _idNum = idIn;
 }
 
-void studList::setGradYear(int gradYearIn)
+void student::setGradYear(int gradYearIn)
 {
-    gradYear_ = gradYearIn;
+    _gradYear = gradYearIn;
 }
 
-void studList::print()
+void student::print()
 {
-    cout << "\n" << name_ << "\t\t" << idNum_ << "\t\t" << gradYear_;
+    cout << "\n" << _name << "\t\t#" << _idNum << "\t\t" << _gradYear;
 }
 
-string studList::getName()
+string student::getName()
 {
-    return name_;
+    return _name;
 }
 
-int studList::getID()
+int student::getID()
 {
-    return idNum_;
+    return _idNum;
 }
 
-int studList::getGradYear()
+int student::getGradYear()
 {
-    return gradYear_;
+    return _gradYear;
 }

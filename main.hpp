@@ -4,13 +4,20 @@
 #include <string>
 #include <iostream>
 #include <iomanip>
+#include <sstream>
+#include <utility> // std::swap( , )
 
 using namespace std;
 
-class studList;
+class student;
 
-void compareName(studList studentIn[], int numStud);
-void compareID(studList studentIn[], int numStud);
-void compareGraduationYear(studList studentIn[], int numStud);
+void sortName(student* studInput, int numStud);
+void sortID(student* studInput, int numStud);
+void sortGradYear(student* studInput, int numStud);
+void listAscending(student* studInput, int numStud);
+void listDescending(student* studInput, int numStud);
+int sortSelection(student* students, int numStud);
+void getStudentList(student* students, int numStud);
+void printInfo(student* studInput, int numStud, int sel);
 
 #endif // CLASS_HPP

@@ -14,4 +14,4 @@ User fills a list of students with their names, IDs and graduation dates.
 
 (6): by graduation year, descending
 
-I use std::swap in <utility> to perform the object swap (<algorithm> prior to C++11).
+I use std::swap in utility header to perform the object swap (algorithm header prior to C++11).

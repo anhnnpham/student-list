@@ -1,7 +1,8 @@
 # student-list
+### I used std::swap in utility header to perform the object swap (algorithm header prior to C++11).
 User fills a list of students with their names, IDs and graduation dates.
 
-### User can choose in what order the list displays:
+#### User can choose in what order the list displays:
 (1): by name, ascending
 
 (2): by name, descending
@@ -13,5 +14,3 @@ User fills a list of students with their names, IDs and graduation dates.
 (5): by graduation year, ascending
 
 (6): by graduation year, descending
-
-I use std::swap in utility header to perform the object swap (algorithm header prior to C++11).

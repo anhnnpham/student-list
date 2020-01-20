@@ -14,9 +14,9 @@ class student;
 void sortName(student* studInput, int numStud);
 void sortID(student* studInput, int numStud);
 void sortGradYear(student* studInput, int numStud);
-void listAscending(student* studInput, int numStud);
-void listDescending(student* studInput, int numStud);
 int sortSelection(student* students, int numStud);
 void printInfo(student* studInput, int numStud, int selection);
+void printAscending(student* studInput, int numStud);
+void printDescending(student* studInput, int numStud);
 
 #endif // CLASS_HPP

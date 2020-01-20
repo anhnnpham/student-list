@@ -1,6 +1,6 @@
 #include "main.hpp"
 class student
-{
+{   // contains all the info about 1 student
 private:
     string _name;
     int _idNum;

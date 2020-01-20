@@ -1,5 +1,5 @@
 int sortSelection(student* studInput, int numStud)
-{
+{   // user chooses the order
     int selection;
     cout << "\nIn what order do you want to sort the list?\n";
     cout << "(1) by name, ascending\n";
@@ -14,41 +14,8 @@ int sortSelection(student* studInput, int numStud)
     return selection;
 }
 
-void printInfo(student* studInput, int numStud, int selection)
-{
-    switch (selection)
-    {
-    case 1:
-        sortName(studInput, numStud);
-        listAscending(studInput, numStud);
-        break;
-    case 3:
-        sortID(studInput, numStud);
-        listAscending(studInput, numStud);
-        break;
-    case 5:
-        sortGradYear(studInput, numStud);
-        listAscending(studInput, numStud);
-        break;
-    case 2:
-        sortName(studInput, numStud);
-        listDescending(studInput, numStud);
-        break;
-    case 4:
-        sortID(studInput, numStud);
-        listDescending(studInput, numStud);
-        break;
-    case 6:
-        sortGradYear(studInput, numStud);
-        listDescending(studInput, numStud);
-        break;
-    default:
-        break;
-    }
-}
-
 void sortName(student* studInput, int numStud)
-{
+{   // bubble sort
     for (size_t times = 0; times < numStud; times++)
     {
         for (size_t j = 0; j < numStud - 1; j++)
@@ -59,14 +26,14 @@ void sortName(student* studInput, int numStud)
                 // studInput[j] = studInput[j+1];
                 // studInput[j+1] = temp;
                 std::swap(studInput[j], studInput[j+1]);
-                // you can swap by reference (&) if the object is not an array
+                // you can also swap by reference (&) if the object is not an array
             }
         }
     }
 }
 
 void sortID(student* studInput, int numStud)
-{
+{   // bubble sort
     for (size_t times = 0; times < numStud; times++)
     {
         for (size_t j = 0; j < numStud - 1; j++)
@@ -80,7 +47,7 @@ void sortID(student* studInput, int numStud)
 }
 
 void sortGradYear(student* studInput, int numStud)
-{
+{   // bubble sort
     for (size_t times = 0; times < numStud; times++)
     {
         for (size_t j = 0; j < numStud - 1; j++)
@@ -93,18 +60,49 @@ void sortGradYear(student* studInput, int numStud)
     }
 }
 
-void listAscending(student* studInput, int numStud)
-{
+void printAscending(student* studInput, int numStud)
+{   // print in an ascending order
     for (size_t j = 0; j < numStud; j++)
     {
         studInput[j].print();
     }
 }
 
-void listDescending(student* studInput, int numStud)
-{
+void printDescending(student* studInput, int numStud)
+{   // print in an descending order
     for (int j = numStud - 1; j >= 0; --j) // size_t = wrong
     {
         studInput[j].print();
+    }
+}
+
+void printInfo(student* studInput, int numStud, int selection)
+{   // print the list according to user's selection
+    switch (selection)
+    {
+    case 1:
+        sortName(studInput, numStud);
+        printAscending(studInput, numStud);
+        break;
+    case 3:
+        sortID(studInput, numStud);
+        printAscending(studInput, numStud);
+        break;
+    case 5:
+        sortGradYear(studInput, numStud);
+        printAscending(studInput, numStud);
+        break;
+    case 2:
+        sortName(studInput, numStud);
+        printDescending(studInput, numStud);
+        break;
+    case 4:
+        sortID(studInput, numStud);
+        printDescending(studInput, numStud);
+        break;
+    case 6:
+        sortGradYear(studInput, numStud);
+        printDescending(studInput, numStud);
+        break;
     }
 }
